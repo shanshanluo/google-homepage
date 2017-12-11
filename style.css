@@ -1,0 +1,86 @@
+
+* {
+  font-size: arial,sans-serif,serif;
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-top {
+  position: fixed;
+  top: 0;
+  border: 1px solid black;
+  width: 100%;
+  /* for debugging */
+  box-sizing: border-box;
+}
+
+.nav-top-left {
+  float: left;
+  margin: 16px;
+  /* for debugging */
+  /* border: 2px solid green;*/
+}
+
+.nav-top-left li {
+  display: inline-block;
+  /* for debugging */
+  /* border: 1px solid red; */
+}
+
+.nav-top-left li a {
+  font-size: 13px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  padding: 0 10px;
+  /* make sure anchor element has same height as its parent */
+  display: inline-block;
+  height: 100%;
+  line-height: 200%;
+  /* for debugging */
+/*  border: 1px solid black;*/
+}
+
+.nav-top-right {
+  margin: 16px;
+  float: right;
+  /* for debugging */
+/*  border: 1px solid red;*/
+}
+.nav-top-right li {
+  display: inline-block;
+  /* for debugging */
+  /*border: 1px solid red;*/
+}
+.nav-top-right li a {
+  font-size: 13px;
+  text-decoration: none;
+  list-style-type: none;
+  color: black;
+  /* make sure anchor element has same height as its parent */
+  display: inline-block;
+  height: 100%;
+  line-height: 200%;
+
+  padding: 0 10px;
+  /* for debugging */
+  /*border: 1px solid black;*/
+}
+
+.nav-top-right .sign-in-icon {
+  background: linear-gradient(to top, #4387fd, #4683ea);
+  /* need to overwrite above style by adding .nav-top-right */
+  color: white;
+  border: 1px solid #4285f4;
+  border-radius: 5%;
+  font-weight: bold;
+
+}
+
+.nav-top-right .expaned-apps {
+  background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+  background-size: 528px 68px;
+  height: 30px;
+  width: 30px;
+  box-sizing: border-box;
+}
