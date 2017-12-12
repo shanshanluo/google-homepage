@@ -7,11 +7,11 @@
 
 .nav-top {
   position: fixed;
+  box-sizing: border-box;
   top: 0;
-  border: 1px solid black;
   width: 100%;
   /* for debugging */
-  box-sizing: border-box;
+  /*border: 1px solid black;*/
 }
 
 .nav-top-left {
@@ -77,10 +77,12 @@
 
 }
 
-.nav-top-right .expaned-apps {
-  background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
-  background-size: 528px 68px;
-  height: 30px;
-  width: 30px;
-  box-sizing: border-box;
+.nav-top-right .expanded-apps {
+  line-height: 1.5;
+}
+
+#app-launcher {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
 }
