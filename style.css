@@ -114,7 +114,7 @@ body {
   height: 100%;
 	width: 100%;
 	position: relative;
-	
+
 /*  border: 1px solid black;*/
 }
 
@@ -154,27 +154,47 @@ body {
 	position: fixed;
 	background-color: #f2f2f2;
 	bottom: 0;
-	height: 35px;
-	width: 100%;
-	line-height: 40px;
-	font-size: 10px;
-	color: #222;
+  width: 100%;
+  padding: 12px 0;
+  box-sizing: border-box;
 }
 
-/*
-#footer .nav-footer {
-	position: absolute;
-	width: 100%;
-	background: linear-gradient(to top, #f5f5f5, 50%, #f1f1f1);
-}
-
-.nav-footer .nav-footer-left {
- 
-}
-
-.nav-footer .nav-footer-left li {
+.nav-footer-left {
   display: inline-block;
-	position: absolute;
-	color: black;
+  position: fixed;
+  left: 20px;
+  height: 100%;
+  /*border: 1px solid blue;*/
 }
-*/
+
+.nav-footer-left li {
+  display: inline-block;
+}
+
+.nav-footer-left li a {
+  line-height: 1;
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 13px;
+	color: gray;
+
+/*  border: 1px solid black;*/
+}
+
+.nav-footer-right {
+  display: inline-block;
+  float: right;
+  height: 100%;
+}
+
+.nav-footer-right li {
+  display: inline-block;
+}
+
+.nav-footer-right li a {
+  display: inline-block;
+  padding: 0 15px;
+  text-decoration: none;
+  font-size: 13px;
+	color: gray;
+}
