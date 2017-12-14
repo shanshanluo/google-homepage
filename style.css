@@ -7,10 +7,16 @@
 
 body {
   position: relative;
+	width: 100%;
+	/* using scroll bar to display element when window goes narrow*/
+	min-width: 1080px;
+	overflow: auto;
 }
 
 .nav-top {
-  position: fixed;
+  position: absolute;
+	/* hidden top navbar when window goes narrow */
+	overflow: hidden;
   box-sizing: border-box;
   top: 0;
   width: 100%;
@@ -48,7 +54,7 @@ body {
 .nav-top-right {
   margin: 20px 30px;
   float: right;
-	min-width: 70px;
+	
   /* for debugging */
 /*  border: 1px solid red;*/
 }
@@ -96,15 +102,15 @@ body {
 .google-icon {
   display: inline-block;
 	position: absolute;
-	top: 196px;
-	left: 38%;
+	top: 200px;
+	left: 40%;
 }
 
 /*******************************************/
 .search-input {
   position: absolute;
 	display: inline-block;
-	margin: 318px 28%;
+	margin: 320px 32%;
 
 /*	border: 1px solid purple;*/
 }
@@ -152,16 +158,18 @@ body {
 
 #footer {
 	position: fixed;
+	/* hidden footer navbar when window goes narrow */
+	overflow: hidden;
+	min-width: 1080px;
 	background-color: #f2f2f2;
 	bottom: 0;
-  width: 100%;
+  width: 100%; 
   padding: 12px 0;
   box-sizing: border-box;
 }
 
 .nav-footer-left {
   display: inline-block;
-  position: fixed;
   left: 20px;
   height: 100%;
   /*border: 1px solid blue;*/
@@ -183,7 +191,7 @@ body {
 
 .nav-footer-right {
   display: inline-block;
-  float: right;
+	float: right;
   height: 100%;
 }
 
