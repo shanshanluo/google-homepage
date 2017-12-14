@@ -151,6 +151,7 @@ body {
 	padding: 4px 16px;
 	margin: 0 2px;
 	color: #787878;
+	border-radius: 2px;
 	background: linear-gradient(to top, #f5f5f5, 50%, #f1f1f1);
 	border: 1px solid #f5f5f5;
 }
@@ -184,7 +185,7 @@ body {
   padding: 0 15px;
   text-decoration: none;
   font-size: 13px;
-	color: gray;
+	color: #626262;
 
 /*  border: 1px solid black;*/
 }
@@ -204,5 +205,23 @@ body {
   padding: 0 15px;
   text-decoration: none;
   font-size: 13px;
-	color: gray;
+	color: #626262;
 }
+
+/************************************/
+.nav-top a:hover,
+#footer a:hover {
+  text-decoration: underline;
+}
+.nav-top-right li:nth-last-child(1)>a:hover {
+  text-decoration: none;
+}
+
+#have-fun-button:hover,
+#search-submit-button:hover {
+  color: black;
+	border: 1px solid #d5d5d5;
+	box-shadow: 0 1px 1px #e0e0e0;
+}
+
+
